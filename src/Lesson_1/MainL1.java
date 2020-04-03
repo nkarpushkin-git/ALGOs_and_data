@@ -2,6 +2,8 @@ package Lesson_1;
 
 import java.util.Arrays;
 
+// Вступительный тест, оценка знаний и понимания темы студентами.
+
 public class MainL1 {
     public static void main(String[] args) {
 //        int a = 1;
