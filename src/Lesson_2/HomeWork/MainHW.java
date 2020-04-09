@@ -44,6 +44,16 @@ public class MainHW {
         myArr.info();
         System.out.println("Время выполнения: " + (System.currentTimeMillis() - time));
 
+        myArr.insert(10);
+        myArr.info();
+
+        myArr.find(10);
+        System.out.println("Время выполнения: " + (System.currentTimeMillis() - time));
+
+        System.out.println("массив после сортировки: ");
+        myArr.sortBubble();
+        myArr.info();
+        System.out.println("Время выполнения: " + (System.currentTimeMillis() - time));
 
     }
 }

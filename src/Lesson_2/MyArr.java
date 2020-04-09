@@ -86,4 +86,21 @@ public class MyArr {
         this.arr[i] = value;
         this.size++;
     }
+
+        public void sortBubble(){
+        int out, in;
+        for (out = this.size - 1; out >= 1; out--) {
+            for(in = 0; in < out; in++) {
+                if (this.arr[in] > this.arr[in + 1]) {
+                    change(in, in + 1);
+                }
+            }
+        }
+    }
+
+        private void change(int a, int b){
+        int tmp = this.arr[a];
+        this.arr[a] = this.arr[b];
+        this.arr[b] = tmp;
+    }
 }
