@@ -31,29 +31,35 @@ public class MainHW {
 
 
         for (int i = 0; i < arr.length -1; i++) {
-            arr[i] = rnd(3);
+            arr[i] = rnd(5);
         }
 
         System.out.println("массив до удаления: ");
 
         myArr.info();
-        System.out.println("Время выполнения: " + (System.currentTimeMillis() - time));
-        myArr.delete(1);
+        int del = 1;
+        System.out.println("Удаляем число: " + del);
+        myArr.delete(del);
         System.out.println("массив после удаления: ");
 
         myArr.info();
         System.out.println("Время выполнения: " + (System.currentTimeMillis() - time));
 
-        myArr.insert(10);
+        int ins = 10;
+        System.out.println("Вставляем число: " + ins);
+        myArr.insert(ins);
         myArr.info();
 
-        myArr.find(10);
-        System.out.println("Время выполнения: " + (System.currentTimeMillis() - time));
+        myArr.findValue(10);
 
-        System.out.println("массив после сортировки: ");
+        System.out.println("массив после пузырьковой сортировки: ");
         myArr.sortBubble();
         myArr.info();
         System.out.println("Время выполнения: " + (System.currentTimeMillis() - time));
+//
+//        System.out.println("Удаляем все ноли:");
+//        myArr.deleteAll(0);
+//        myArr.info();
 
     }
 }
