@@ -1,12 +1,19 @@
 package Lesson_2;
 
+import java.lang.reflect.Array;
+
 public class MyArr {
-    private int[] arr;
+    public int[] arr;
     private int size;
 
     public MyArr(int size) {
         this.size = 0;
         this.arr = new int[size];
+    }
+
+    public MyArr(int[] arr, int size) {
+        this.size = size;
+        this.arr = arr;
     }
 
     public boolean binaryFind(int value){
@@ -42,6 +49,14 @@ public class MyArr {
         for (int i = 0; i < this.size; i++) {
             System.out.println(this.arr[i]);
         }
+    }
+
+    public void info() {
+        System.out.println("Вывод массива с удаленным элементом");
+        for (int j = 0; j < size; j++) {
+            System.out.print(arr[j] + " ");
+        }
+        System.out.println();
     }
 
     public void delete(int value){
